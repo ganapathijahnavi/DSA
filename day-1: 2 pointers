@@ -1,0 +1,19 @@
+1️⃣ Pair Sum in Sorted Array
+Problem:
+Given a sorted array and a target value, determine if there exists a pair of elements whose sum equals the target.
+
+Example:
+Input: arr = [1, 2, 4, 7, 11], target = 9
+Output: true
+Explanation: 2 + 7 = 9
+
+code:
+l, r = 0, len(arr)-1
+while(l < r ):
+  if arr[l] + arr[r] == target:
+    return true
+  elif arr[l] + arr[r] > target:
+    r -= 1
+  else:
+    l += 1
+  return false
