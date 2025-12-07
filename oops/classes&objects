@@ -1,0 +1,15 @@
+class is the blueprint or template
+object is the instance of the class or real entity created from class
+class = car
+objects = BMW, Audi, Tesla
+
+class car:
+  def __init__(self,brand,color):
+    self.brand = brand
+    self.color = color
+  def drive(self):
+    print(self.brand,"is driving")
+car1 = car("BMW","Black")
+car2 = car("Audi","white")
+car1.drive
+car2.drive
