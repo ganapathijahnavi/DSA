@@ -1,0 +1,3 @@
+hiding internal details
+protect data using getters and setters
+ATM hides internal mechanism and only shows required UI 
