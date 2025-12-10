@@ -2,7 +2,7 @@ hiding internal details
 protect data using getters and setters
 ATM hides internal mechanism and only shows required UI 
 
-class BankAcc():
+class BankAcc:
   def __init__(self, amount):
     self.amount = amount
   def deposit(self, amount):
