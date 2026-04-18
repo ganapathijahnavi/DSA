@@ -1,0 +1,15 @@
+arr = [1,2,4,5,3,10,9]
+large = float('-inf')
+second = float('-inf')
+third = float('-inf')
+for i in arr:
+    if i > large:
+        third = second
+        second = large
+        large = i
+    elif i > second and i < large :
+        third = second
+        second = i
+    elif i > third and i < second:
+        third = i
+print(third)
