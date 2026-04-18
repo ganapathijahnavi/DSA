@@ -1,0 +1,27 @@
+Check palindrome (string/number)
+For string
+
+st = input()
+end = len(st) - 1
+is_pal = True
+for i in range(len(st)//2):
+    if st[i] != st[end - i]:
+        is_pal = False
+        break
+
+print(is_pal)
+
+For Number
+
+num = 1221
+temp = num 
+rev = 0
+while num > 0:
+    rem = num % 10
+    rev = rev * 10 + rem
+    num = num // 10
+
+if temp == rev:
+    print(True)
+else:
+    print(False)
