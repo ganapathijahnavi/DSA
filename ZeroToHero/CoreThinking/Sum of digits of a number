@@ -1,0 +1,7 @@
+num = 6789
+sum1 = 0
+while(num > 0):
+    rem = num % 10
+    sum1 += rem
+    num = num // 10
+print(sum1)
