@@ -1,0 +1,23 @@
+simple
+st = "Jahnavi Durga"
+res = ""
+for i in range(len(st)-1, -1, -1):
+    res += st[i]
+print(res)
+
+Better Pythonic way
+st = "Jahnavi Durga"
+print(st[::-1])
+
+"Strings are Immutable, We cannot change them 'inplace' so we can use this below method "
+st = "Jahnavi Durga"
+st = list(st)
+l, r = 0, len(st) - 1
+while l < r:
+    st[l], st[r] = st[r], st[l]
+    l += 1
+    r -= 1
+st = "".join(st)
+print(st)
+
+Note: "Strings are immutable in python, so true inplace reversal is not possible . i'll convert it into a list and reverse using two pointers and convert back "
