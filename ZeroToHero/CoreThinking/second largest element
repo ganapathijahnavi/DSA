@@ -1,0 +1,13 @@
+arr = [1, 2, 4, 5, 3, 10, 9]
+large = float('-inf')
+second = float('-inf')
+for num in arr:
+    if num > large:
+        second = large
+        large = num
+    elif num > second and num < large:
+        second = num
+
+print(second)
+
+Note: why we use float('inf')? --> for representating smallest element we use the float('-inf') as well as for representating the largest element we use the float('inf'). if we use arr[0] instead of float('-inf'), it might fail in the cases of duplicates. 
