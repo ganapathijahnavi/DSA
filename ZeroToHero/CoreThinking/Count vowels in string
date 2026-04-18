@@ -1,0 +1,13 @@
+st = "JAHNAVI DuRGA"
+cnt = 0
+for i in st:
+    if i in ['a','e','i','o','u','A','E','I','O','U']:
+        cnt += 1
+print(cnt)
+
+another one 
+cnt = 0
+for i in st:
+  if i.lower() in "aeiou":
+    cnt += 1
+print(cnt)
