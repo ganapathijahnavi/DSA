@@ -1,0 +1,13 @@
+arr = list(map(int,input().split(" ")))  #[1,2,3,4,5]
+d = int(input())   # 2
+d %= len(arr)
+def rev(arr, left, right):
+    while(left < right):
+        arr[left], arr[right] = arr[right], arr[left]
+        left += 1 
+        right -= 1
+    return arr
+rev(arr, 0, len(arr)-1)
+rev(arr, 0, d-1)
+rev(arr, d, len(arr)-1)
+print(arr)
