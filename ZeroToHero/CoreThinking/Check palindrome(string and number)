@@ -25,3 +25,20 @@ if temp == rev:
     print(True)
 else:
     print(False)
+
+For Handling negative ones also 
+
+n = int(input())
+temp = n
+rev = 0
+n = abs(n)
+while n > 0 :
+    rem = n % 10
+    rev = (rev*10) + rem
+    n //= 10
+if temp < 0 and temp == (-1)*rev:
+    print(True)
+elif rev == temp:
+    print(True)
+else:
+    print(False)
