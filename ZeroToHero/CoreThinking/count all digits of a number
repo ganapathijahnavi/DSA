@@ -1,0 +1,10 @@
+n = int(input())
+while n > 0:
+    count += 1
+    n = n // 10
+print(count)
+
+optimal one
+import math 
+n = int(input())
+print(int(math.log10(n))+1)
