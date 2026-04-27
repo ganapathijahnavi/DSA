@@ -1,0 +1,7 @@
+def printNtimes(num,s):
+    if num == 1:
+        return s
+    return s + "\n" + printNtimes(num-1,s)
+num = int(input())
+s = input()    
+print(printNtimes(num, s))
