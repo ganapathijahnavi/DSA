@@ -1,0 +1,17 @@
+#using Recursion
+def printNnumbers(curr,num):
+    if curr > num:
+        return
+   
+    print(curr,end =" ")
+    return printNnumbers(curr+1,num)
+printNnumbers(1,100)
+
+#using backtracking
+
+def printNnumbers(curr,num):
+    if curr < 1:
+        return
+    printNnumbers(curr-1,num)
+    print(curr,end =" ")
+printNnumbers(100,1)
