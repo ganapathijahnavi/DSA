@@ -1,0 +1,13 @@
+import math
+num = int(input())
+temp = num
+cnt = 0
+n =  int(math.log10(temp) + 1)
+while(num > 0):
+    rem = num % 10
+    cnt += rem ** n
+    num //= 10
+if cnt == temp :
+    print("Armstrong")
+else:
+    print("Not Armstrong")
