@@ -1,0 +1,8 @@
+#Sum of First N Numbers
+def printNnumbers(tot,curr,num):
+    if curr <= num:
+        return printNnumbers(tot+curr,curr+1,num)
+    else:
+        return tot
+    
+print(printNnumbers(0,1,20))
