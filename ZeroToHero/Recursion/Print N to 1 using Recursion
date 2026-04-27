@@ -1,0 +1,8 @@
+def printNnumbers(curr,num):
+    if curr < 1:
+        return
+    print(curr,end =" ")
+    printNnumbers(curr-1,num)
+    
+printNnumbers(100,1)
+        
