@@ -7,5 +7,19 @@ def ispalindrome(a,start,end):
     return ispalindrome(a,start+1,end-1)
 
 s1 = input()    
-s = ispalindrome(s1, 0, len(s1)-1)
+s = ispalindrome(s1, 0, len(s1)//2)
+print(s)
+
+another optimal solution 
+#Check if String is Palindrome or Not
+def ispalindrome(a,start):
+    p = len(a)
+    if start >= p // 2:
+        return True
+    if a[start] != a[(p-1)-start]:
+        return False
+    return ispalindrome(a,start+1)
+
+s1 = input().lower()   
+s = ispalindrome(s1, 0)
 print(s)
