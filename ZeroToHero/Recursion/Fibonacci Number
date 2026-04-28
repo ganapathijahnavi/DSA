@@ -1,0 +1,9 @@
+#Fibonacci Number
+def fabi(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        return fabi(n-1) + fabi(n-2)
+
+num = int(input())
+print(fabi(num))
