@@ -1,0 +1,11 @@
+#Check if String is Palindrome or Not
+def ispalindrome(a,start,end):
+    if start >= end:
+        return True
+    if a[start] != a[end]:
+        return False
+    return ispalindrome(a,start+1,end-1)
+
+s1 = input()    
+s = ispalindrome(s1, 0, len(s1)-1)
+print(s)
