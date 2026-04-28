@@ -1,0 +1,8 @@
+#Reverse an array
+def rev(arr,start,end):
+    if start >= end:
+        return arr
+    arr[start], arr[end] = arr[end], arr[start]
+    return rev(arr,start+1,end-1)
+    
+print(rev([1,2,3,4], 0, 3))
