@@ -1,0 +1,11 @@
+def linear_search(arr,ele,start):
+    end = len(arr)-1
+    if start > end:
+        return -1
+    if arr[start] == ele:
+        return start
+    else:
+        return linear_search(arr,ele, start+1)
+arr = [2,1,5,3,4]
+ele = 4
+print(linear_search(arr,ele,0))
