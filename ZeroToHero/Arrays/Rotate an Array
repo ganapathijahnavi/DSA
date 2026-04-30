@@ -1,6 +1,8 @@
 arr = list(map(int,input().split(" ")))  #[1,2,3,4,5]
 d = int(input())   # 2
 d %= len(arr)
+if len(arr) == 0 or d == 0:
+    return nums
 def rev(arr, left, right):
     while(left < right):
         arr[left], arr[right] = arr[right], arr[left]
