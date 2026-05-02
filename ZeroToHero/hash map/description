@@ -1,0 +1,20 @@
+1. Dictionary (dict)
+In Python, this is the concrete implementation. It is a built-in data type. When you write my_dict = {"name": "Gemini"}, you are using a Python dictionary.
+Unique Feature: Since Python 3.7+, dictionaries are officially ordered (they remember the order in which items were inserted).
+Usage: This is what you will use 99% of the time in Python.
+
+2. Hash Map
+This is a conceptual/generic term used in computer science.
+If you were coding in Java, you would literally use a class called HashMap.
+In Python, when someone says "Hash Map," they almost always mean a Python Dictionary.
+The "Hash" part: It's called this because it uses a Hash Function to turn your key (like the string "apple") into an index in memory, making lookups nearly instantaneous.
+
+3. Hash Table
+This is the underlying data structure.
+Think of the "Hash Table" as the engine and the "Dictionary" as the car.
+A Hash Table is the mathematical and architectural way of organizing data so that you can find any value in O(1) (constant) time. 
+
+4. Associative Array
+This is another theoretical term. It simply describes any data structure that associates a key with a value.
+Dictionaries, Hash Maps, and Hash Tables are all types of Associative Arrays.
+
