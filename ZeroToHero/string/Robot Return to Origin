@@ -1,0 +1,31 @@
+Example 1:
+Input: moves = "UD"
+Output: true
+Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.
+
+Example 2:
+Input: moves = "LL"
+Output: false
+Explanation: The robot moves left twice. It ends up two "moves" to the left of the origin. We return false because it is not at the origin at the end of its moves.
+
+Code:
+ def judgeCircle(self, moves: str) -> bool:
+        # st = {"R":"L", "D":"U", "L":"R", "U":"D"}
+        # s = []
+        # for i in sorted(moves):
+        #     if s and s[-1] == st[i] :
+        #         s.pop()
+        #     else:
+        #         s.append(i) 
+        # return not s
+        x , y = 0, 0
+        for i in moves:
+            if i == "R":
+                x += 1
+            elif i == "L":
+                x -= 1
+            elif i == "U":
+                y += 1
+            elif i == "D":
+                y -= 1
+        return True if x == y == 0 else False
