@@ -1,0 +1,31 @@
+Example 1:
+Input:
+nums = [7, 0, 0, 1, 7, 7, 2, 7, 7]  
+Output:
+ 7  
+Explanation:
+ The number 7 appears 5 times in the 9-sized array, making it the most frequent element.
+
+Example 2:
+Input:
+nums = [1, 1, 1, 2, 1, 2]  
+Output:
+1  
+Explanation:
+The number 1 appears 4 times in the 6-sized array, making it the most frequent element.
+
+code:
+nums = list(map(int,input().split()))
+dic = {}
+flag = 0
+n = len(nums)
+for i in nums:
+    dic[i] = dic.get(i,0) + 1
+for j, k in dic.items():
+    if k > (n//2):
+        flag = 1
+        res = j
+if flag == 1:
+    print(res)
+else:
+    print(-1)
